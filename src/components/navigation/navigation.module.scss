@@ -1,0 +1,25 @@
+.navigation{
+	font-family: Merienda-Regular;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	&__logo{
+		width: 35px;
+		height: 35px;
+		margin-right: -40px;
+	}
+	&__list{
+		width: 320px;
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		a{
+			text-decoration: none;
+			color: #ffffff;
+		}
+		a:hover{
+			color: #dcce7a;
+			transition: 0.3s all;
+		}
+	}
+}
