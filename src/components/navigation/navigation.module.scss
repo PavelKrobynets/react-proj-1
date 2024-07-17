@@ -18,7 +18,7 @@
 			color: #ffffff;
 		}
 		a:hover{
-			color: #dcce7a;
+			color: var(--hover-color);
 			transition: 0.3s all;
 		}
 	}

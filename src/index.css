@@ -1,6 +1,10 @@
-
+:root {
+  --text-shadow: rgba(0, 0, 0, 0.472) 1px 0 10px;
+  --hover-color: #dcce7a;
+}
 body {
   margin: 0;
+	font-family: Merienda-Regular;
 }
 @font-face {
   font-family: Merienda-Regular;
