@@ -3,7 +3,7 @@ import styles from "./about.module.scss"
 export default function About() {
   return (
     <div className={styles.about}>
-      <div className={styles.container}>
+      <div className={styles.about__wrapper}>
         <div className={styles.about__title}>About Us</div>
         <img src="/icons/Beans_logo_dark.svg" alt="beans_logo" />
         <div className={styles.about__text}>

@@ -1,11 +1,11 @@
 import styles from "./navigation.module.scss";
 
-export default function Navigation() {
+export default function Navigation({logo}) {
   return (
     <div className={styles.navigation}>
       <img
         className={styles.navigation__logo}
-        src="/icons/Group.svg"
+        src={logo}
         alt="logo"
       />
       <ul className={styles.navigation__list}>

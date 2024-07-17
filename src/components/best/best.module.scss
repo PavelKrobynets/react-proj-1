@@ -1,10 +1,18 @@
 .best {
   background: url("../../../public/img/Mask-Group.jpg") center/cover no-repeat;
-	height: 495px;
-	display: flex;
-	justify-content: center;
-	&__title{
-		font-size: 24px;
-		margin: 80px auto 40px;
-	}
+  height: 495px;
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  &__title {
+    font-size: 24px;
+    margin: 80px auto 40px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+		gap: 71px;
+  }
 }

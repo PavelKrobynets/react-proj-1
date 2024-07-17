@@ -7,6 +7,7 @@
 		width: 35px;
 		height: 35px;
 		margin-right: -40px;
+		margin-top: -15px;
 	}
 	&__list{
 		width: 320px;
@@ -15,7 +16,6 @@
 		list-style: none;
 		a{
 			text-decoration: none;
-			color: #ffffff;
 		}
 		a:hover{
 			color: var(--hover-color);

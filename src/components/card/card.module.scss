@@ -1,0 +1,20 @@
+.card {
+  width: 220px;
+  height: 240px;
+  background-color: var(--card-background);
+  border-radius: 8px;
+	display: flex;
+	font-size: 14px;
+  &__wrapper {
+    margin: 22px 35px; 
+		text-align: end;
+		align-self: end;
+  }
+  img {
+    border-radius: 3px;
+		width: 100%;
+  }
+	&__price{
+		font-family: Merienda-Bold;
+	}
+}

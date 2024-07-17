@@ -1,21 +1,20 @@
-
-.about{
-	height: 520px;
-	.container{
-		width: 590px;
-		text-align: center;
-		margin: 80px auto 0;
-		img{
-			padding: 30px 0;
-			width: 200px;
-			height: 30px;
-		}
-	}
-	&__title{
-		font-size: 24px;
-	}
-	&__text{
-		padding-top: 20px;
-		font-size: 14px;
-	}
+.about {
+  height: 520px;
+  &__wrapper {
+    width: 590px;
+    text-align: center;
+    margin: 80px auto 0;
+    img {
+      padding: 30px 0;
+      width: 200px;
+      height: 30px;
+    }
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__text {
+    padding-top: 20px;
+    font-size: 14px;
+  }
 }
