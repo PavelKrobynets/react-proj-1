@@ -2,7 +2,12 @@
 	font-family: Merienda-Regular;
 	font-size: 12px;
 	display: flex;
+	justify-content: start;
 	align-items: center;
+	height: 90px;
+	margin-bottom: -90px;
+	width: 100%;
+	padding-left: 150px;
 	&__logo{
 		width: 35px;
 		height: 35px;
@@ -23,3 +28,4 @@
 		}
 	}
 }
+

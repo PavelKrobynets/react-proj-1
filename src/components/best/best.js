@@ -1,5 +1,5 @@
 import styles from "./best.module.scss";
-import Card from "../card/card";
+import Card from "../card/Card";
 
 export default function Best({coffeInfo}) {
   const elements = coffeInfo.map((coffeCard) => {

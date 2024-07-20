@@ -1,0 +1,35 @@
+.info{
+	height: 530px;
+	display: flex;
+	padding-top: 20px;
+	justify-content: center;
+	gap: 80px;
+	
+	img{
+		width: 100%;
+	}
+
+	&__wrapper{
+		padding-top: 5%;
+		width: 350px;
+		text-align: center;
+
+		img{
+			width: 60%;
+		}
+	}
+
+	&__title{
+		font-size: 24px;
+	}
+
+	&__img{
+		width: 400px;
+		height: 355px;
+	}
+
+	&__text{
+		line-height: 25px;
+		white-space: pre-line;
+	}
+}

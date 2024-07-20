@@ -1,11 +1,11 @@
-import "./Main.css";
-import Introduce from "../introduce/introduce";
-import Header from "../header/header";
-import About from "../about/about";
-import Best from "../best/best";
-import Footer from "../footer/footer";
+import "./Main.scss";
+import Introduce from "../introduce/Introduce";
+import Navigation from "../navigation/Navigation";
+import About from "../about/About";
+import Best from "../best/Best";
+import Footer from "../footer/Footer";
 
-export default function App() {
+export default function Main() {
   const coffeInfo = [
     {
       name: "Solimo Coffee Beans 2 kg",
@@ -27,12 +27,12 @@ export default function App() {
     },
   ];
   return (
-    <div className="App">
-      <Header logo={'/icons/Group.svg'}/>
+    <div className="main">
+      <Navigation logo={"/icons/Group.svg"} />
       <Introduce />
       <About />
       <Best coffeInfo={coffeInfo} />
-      <Footer logo={'/icons/coffee-beans.svg'}/>
+      <Footer logo={"/icons/coffee-beans.svg"} />
     </div>
   );
 }
