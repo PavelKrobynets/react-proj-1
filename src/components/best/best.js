@@ -1,10 +1,11 @@
 import styles from "./best.module.scss";
 import Card from "../card/Card";
 
-export default function Best({coffeInfo}) {
-  const elements = coffeInfo.map((coffeCard) => {
-		const {id, ...props} = coffeCard;
-    return <Card key={id} coffeCard={props} />;
+export default function Best({coffeeInfo}) {
+  const elements = coffeeInfo.map((coffeeCard) => {
+		console.log(coffeeCard);
+		const {id, ...props} = coffeeCard;
+    return <Card key={id} {...props} />;
   });
   return (
     <div className={styles.best}>

@@ -6,7 +6,7 @@ import Best from "../best/Best";
 import Footer from "../footer/Footer";
 
 export default function Main() {
-  const coffeInfo = [
+  const coffeeInfo = [
     {
       name: "Solimo Coffee Beans 2 kg",
       price: 10.73,
@@ -31,7 +31,7 @@ export default function Main() {
       <Navigation logo={"/icons/Group.svg"} />
       <Introduce />
       <About />
-      <Best coffeInfo={coffeInfo} />
+      <Best coffeeInfo={coffeeInfo} />
       <Footer logo={"/icons/coffee-beans.svg"} />
     </div>
   );

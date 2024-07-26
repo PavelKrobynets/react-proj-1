@@ -1,6 +1,6 @@
 .best {
   background: url("../../../public/img/Mask-Group.jpg") center/cover no-repeat;
-  height: 495px;
+  height: 450px;
   display: flex;
   justify-content: center;
 	align-items: center;
@@ -15,5 +15,8 @@
     display: flex;
     justify-content: space-between;
 		gap: 71px;
+		div{
+			
+		}
   }
 }

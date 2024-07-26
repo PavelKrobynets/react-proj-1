@@ -1,4 +1,45 @@
 .coffeeFilter{
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	width: 1110px;
+	gap: 100px;
+	margin: 60px auto;
+	
+	&__wrapper{
+		display: flex;
+		gap: 30px;
+		height: 35px;
+		align-items: center;
+
+		ul{
+			display: flex;
+			list-style: none;
+			gap: 10px;
+
+			li{
+				cursor: pointer;
+				font-size: 14px;
+				height: 40px;
+				width: 90px;
+				text-align: center;
+				line-height: 40px;
+				box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+				border-radius: 4px;
+			}
+		}
+	}
+
+	.search-field{
+		height: 35px;
+		width: 180px;
+		text-align: center;
+		font-family: Merienda-Regular;
+		border: none;
+		box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+	}
+}
+input::placeholder{
+	color: rgba(0, 0, 0, 0.5);
 }
