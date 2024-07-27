@@ -3,7 +3,6 @@ import Card from "../card/Card";
 
 export default function Best({coffeeInfo}) {
   const elements = coffeeInfo.map((coffeeCard) => {
-		console.log(coffeeCard);
 		const {id, ...props} = coffeeCard;
     return <Card key={id} {...props} />;
   });
