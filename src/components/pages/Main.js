@@ -3,7 +3,6 @@ import Introduce from "../introduce/Introduce";
 import Navigation from "../navigation/Navigation";
 import About from "../about/About";
 import Best from "../best/Best";
-import Footer from "../footer/Footer";
 
 export default function Main() {
   const coffeeInfo = [
@@ -32,7 +31,6 @@ export default function Main() {
       <Introduce />
       <About />
       <Best coffeeInfo={coffeeInfo} />
-      <Footer logo={"/icons/coffee-beans.svg"} />
     </div>
   );
 }

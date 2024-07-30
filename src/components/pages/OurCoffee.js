@@ -4,7 +4,7 @@ import Header from "../header/HeaderSection.js";
 import InfoSection from "../infoSection/InfoSection.js";
 import CoffeeFilter from "../coffeeFilter/CoffeeFilter.js";
 import CardList from "../cardList/CardList.js";
-import Footer from "../footer/Footer.js";
+import { coffeeCards } from "../../helpers/coffeeList.js";
 
 const info = {
   img: "/img/aboutOurBeans.png",
@@ -17,55 +17,21 @@ export default class OurCoffee extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      coffeeCards: [
-        {
-          name: "Aromistico Coffee 1 kg",
-          country: "Brazil",
-          price: 6.99,
-          id: 1,
-        },
-        {
-          name: "Comfoods Coffee 1 kg",
-          country: "Kenya",
-          price: 7.1,
-          id: 2,
-        },
-        {
-          name: "Tchibo Coffee 1 kg",
-          country: "Columbia",
-          price: 8,
-          id: 3,
-        },
-        {
-          name: "Vinacafe Coffee 1 kg",
-          country: "Columbia",
-          price: 8,
-          id: 4,
-        },
-        {
-          name: "Paulig Coffee 1 kg",
-          country: "Brazil",
-          price: 6.99,
-          id: 5,
-        },
-        {
-          name: "Franck Coffee 1 kg",
-          country: "Brazil",
-          price: 6.99,
-          id: 6,
-        },
-      ],
+      coffeeCards: [],
       term: "",
       tab: "All",
     };
   }
 
+	componentDidMount() {
+		this.setState({ coffeeCards });
+	}
   searchCoffee = (coffeeCards, term) => {
     if (term === "") {
       return coffeeCards;
     } else {
       return coffeeCards.filter((coffee) =>
-        coffee.name.toLowerCase().includes(term.toLowerCase())
+        coffee.title.toLowerCase().includes(term.toLowerCase())
       );
     }
   };
@@ -105,7 +71,6 @@ export default class OurCoffee extends Component {
           onFilterSelect={this.onFilterSelect}
         />
         <CardList coffeeCards={visibleData} />
-        <Footer logo={"/icons/coffee-beans.svg"} />
       </div>
     );
   }

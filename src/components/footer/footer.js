@@ -1,7 +1,8 @@
 import styles from "./footer.module.scss";
 import Navigation from "../navigation/Navigation";
+import logo from "./coffee-beans.svg"
 
-export default function Footer({ logo }) {
+export default function Footer() {
   return (
     <div className={styles.footer}>
       <div className={styles.footer__wrapper}>
