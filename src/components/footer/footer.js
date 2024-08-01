@@ -1,6 +1,7 @@
 import styles from "./footer.module.scss";
 import Navigation from "../navigation/Navigation";
-import logo from "./coffee-beans.svg"
+import logo from "./logo-dark.svg"
+import logoDark from "../../icons/Beans_logo_dark.svg" 
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <Navigation logo={logo} />
         <img
           className={styles.footer__img}
-          src="/icons/Beans_logo_dark.svg"
+          src={logoDark}
           alt="beans_logo"
         />
       </div>

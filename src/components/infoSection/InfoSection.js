@@ -1,7 +1,8 @@
 import styles from "./infoSection.module.scss"
+import logoDark from "../../icons/Beans_logo_dark.svg"
 
 
-export default function InfoSection({img, title, descr, ...props}) { 
+export default function InfoSection( {img, title, descr, ...props}) { 
 	return (
 		<div className={styles.info}>
 			<div className={styles.info__img}><img src={img} alt="coffeeSunset" /></div>
@@ -10,7 +11,7 @@ export default function InfoSection({img, title, descr, ...props}) {
 			>
 				<div className={styles.info__top}>
 				<h1 className={styles.info__title}>{title}</h1>
-				<img src="/icons/Beans_logo_dark.svg" alt="" />
+				<img src={logoDark} alt="" />
 				</div>
 				<div className={styles.info__country}
 				style={!props.country ? {"display": "none" }: null}

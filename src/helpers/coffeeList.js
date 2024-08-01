@@ -1,7 +1,11 @@
+import aromicoImg from '../img/best_img/solimo.jpg'
+import aromisticoImg from "../img/best_img/aromistico.jpg"
+import prestoImg from "../img/best_img/presto.jpg"
+
 export const coffeeCards = [
   {
     title: "Aromistico Coffee 1 kg",
-    img: "img/best_img/aromistico.jpg",
+    img: aromisticoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Brazil",
     price: 6.99,
@@ -9,7 +13,7 @@ export const coffeeCards = [
   },
   {
     title: "Comfoods Coffee 1 kg",
-    img: "img/best_img/presto.jpg",
+    img: prestoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Kenya",
     price: 7.1,
@@ -17,7 +21,7 @@ export const coffeeCards = [
   },
   {
     title: "Tchibo Coffee 1 kg",
-    img: "/img/aromico.jpg",
+    img: aromicoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Columbia",
     price: 8,
@@ -25,7 +29,7 @@ export const coffeeCards = [
   },
   {
     title: "Vinacafe Coffee 1 kg",
-    img: "/img/aromico.jpg",
+    img: aromicoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Columbia",
     price: 8,
@@ -33,7 +37,7 @@ export const coffeeCards = [
   },
   {
     title: "Paulig Coffee 1 kg",
-    img: "img/best_img/aromistico.jpg",
+    img: aromisticoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Brazil",
     price: 6.99,
@@ -41,7 +45,7 @@ export const coffeeCards = [
   },
   {
     title: "Franck Coffee 1 kg",
-    img: "img/best_img/aromistico.jpg",
+    img: aromisticoImg,
 		descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum consequuntur esse. Velit ex quaerat tempora est qui facilis atque quis",
     country: "Brazil",
     price: 6.99,

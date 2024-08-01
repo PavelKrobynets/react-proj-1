@@ -1,4 +1,5 @@
 import styles from "./introduce.module.scss";
+import logo from "../../icons/Beans_logo.svg"
 
 export default function Introduce() {
   return (
@@ -7,7 +8,7 @@ export default function Introduce() {
         <div className={styles.introduce__title}>
           Everything You Love About Coffee
         </div>
-        <img src="/icons/Beans_logo.svg" alt="" />
+        <img src={logo} alt="" />
         <div className={styles.introduce__text}>
           We makes every day full of energy and taste
           <br /> Want to try our beans?

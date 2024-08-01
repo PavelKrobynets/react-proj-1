@@ -1,5 +1,6 @@
 import Header from "../header/HeaderSection";
 import InfoSection from "../infoSection/InfoSection";
+import headerImg from "../../img/headerImg.jpg"
 import "./CoffeePage.scss"
 
 const info = {
@@ -13,7 +14,7 @@ const info = {
 export default function CoffeePage() { 
 	return (
 		<div className="coffeePage">
-			<Header title={"Our Coffee"}/>
+			<Header title={"Our Coffee"} img={headerImg}/>
 			{/* <div className="coffeePage__wrapper">
 				<img src="" alt="" className="coffeePage__img"/>
 				<div className="coffeePage__content">
