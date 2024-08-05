@@ -1,6 +1,6 @@
-import Header from "../header/HeaderSection";
-import InfoSection from "../infoSection/InfoSection";
-import headerImg from "../../img/headerImg.jpg"
+import Header from "../../header/HeaderSection";
+import InfoSection from "../../infoSection/InfoSection";
+import headerImg from "../../../img/headerImg.jpg"
 import "./CoffeePage.scss"
 
 const info = {

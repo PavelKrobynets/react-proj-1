@@ -1,4 +1,5 @@
 import styles from "./navigation.module.scss";
+import {NavLink} from "react-router-dom"
 
 export default function Navigation({logo}) {
   return (
@@ -10,13 +11,13 @@ export default function Navigation({logo}) {
       />
       <ul className={styles.navigation__list}>
         <li>
-          <a href="youtube.com">Coffee house</a>
+          <NavLink to='/'>Coffee house</NavLink>
         </li>
         <li>
-          <a href="youtube.com">Our coffee</a>
+          <NavLink to='/OurCoffee'>Our coffee</NavLink>
         </li>
         <li>
-          <a href="youtube.com">For your pleasure</a>
+          <NavLink to='/Goods'>For your pleasure</NavLink>
         </li>
       </ul>
     </div>

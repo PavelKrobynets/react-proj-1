@@ -1,12 +1,12 @@
 import "./OurCoffee.scss";
 import { Component } from "react";
-import Header from "../header/HeaderSection.js";
-import InfoSection from "../infoSection/InfoSection.js";
-import CoffeeFilter from "../coffeeFilter/CoffeeFilter.js";
-import CardList from "../cardList/CardList.js";
-import { coffeeCards } from "../../helpers/coffeeList.js";
-import headerImg from "../../img/headerImg.jpg"
-import coffeeImg from "../../img/aboutOurBeans.png"
+import Header from "../../header/HeaderSection.js";
+import InfoSection from "../../infoSection/InfoSection.js";
+import CoffeeFilter from "../../coffeeFilter/CoffeeFilter.js";
+import CardList from "../../cardList/CardList.js";
+import { coffeeCards } from "../../../helpers/coffeeList.js";
+import headerImg from "../../../img/headerImg.jpg"
+import coffeeImg from "../../../img/aboutOurBeans.png"
 
 const info = {
   img: coffeeImg,

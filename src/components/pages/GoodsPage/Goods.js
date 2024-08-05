@@ -1,11 +1,11 @@
 import "./Goods.scss";
 import { useState, useEffect } from "react";
-import Header from "../header/HeaderSection.js";
-import InfoSection from "../infoSection/InfoSection.js";
-import headerImg from "../../img/Goods.png";
-import cupImg from "../../img/Cup.png";
-import CardList from "../cardList/CardList.js";
-import { coffeeCards } from "../../helpers/coffeeList.js";
+import Header from "../../header/HeaderSection.js";
+import InfoSection from "../../infoSection/InfoSection.js";
+import headerImg from "../../../img/Goods.png";
+import cupImg from "../../../img/Cup.png";
+import CardList from "../../cardList/CardList.js";
+import { coffeeCards } from "../../../helpers/coffeeList.js";
 
 const info = {
   img: cupImg,

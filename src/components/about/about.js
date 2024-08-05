@@ -1,11 +1,12 @@
 import styles from "./about.module.scss"
+import icon from "../../icons/Beans_logo_dark.svg"
 
 export default function About() {
   return (
     <div className={styles.about}>
       <div className={styles.about__wrapper}>
         <div className={styles.about__title}>About Us</div>
-        <img src="/icons/Beans_logo_dark.svg" alt="beans_logo" />
+        <img src={icon} alt="beans_logo" />
         <div className={styles.about__text}>
           Extremity sweetness difficult behaviour he of. On disposal of as
           landlord horrible. Afraid at highly months do things on at. Situation
