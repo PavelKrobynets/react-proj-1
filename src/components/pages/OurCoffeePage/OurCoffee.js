@@ -1,12 +1,12 @@
 import "./OurCoffee.scss";
-import { Component } from "react";
+import { useState, useEffect } from "react";
 import Header from "../../header/HeaderSection.js";
 import InfoSection from "../../infoSection/InfoSection.js";
 import CoffeeFilter from "../../coffeeFilter/CoffeeFilter.js";
 import CardList from "../../cardList/CardList.js";
-import { coffeeCards } from "../../../helpers/coffeeList.js";
-import headerImg from "../../../img/headerImg.jpg"
-import coffeeImg from "../../../img/aboutOurBeans.png"
+import useCardList from "../../../helpers/coffeeList.js";
+import headerImg from "../../../img/headerImg.jpg";
+import coffeeImg from "../../../img/aboutOurBeans.png";
 
 const info = {
   img: coffeeImg,
@@ -16,21 +16,18 @@ const info = {
 	As greatly removed calling pleased improve an. Last ask him cold feel\n met spot shy want. Children me laughing we prospect answered followed. At it wentis song that held help face.`,
 };
 
-export default class OurCoffee extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      coffeeCards: [],
-      term: "",
-      tab: "All",
-    };
-  }
+export default function OurCoffee() {
+  const [coffeeCards, setCofeeCards] = useState([]);
+  const [term, setTerm] = useState("");
+  const [tab, setTab] = useState("All");
 
-	componentDidMount() {
-		this.setState({ coffeeCards });
-	}
+  const { getAllCards} = useCardList();
 
-  searchCoffee = (coffeeCards, term) => {
+  useEffect(() => {
+    setCofeeCards(getAllCards);
+  }, []);
+
+  const searchCoffee = (coffeeCards, term) => {
     if (term === "") {
       return coffeeCards;
     } else {
@@ -40,11 +37,11 @@ export default class OurCoffee extends Component {
     }
   };
 
-  onUpdateCoffee = (term) => {
-    this.setState({ term });
+  const onUpdateCoffee = (term) => {
+    setTerm(term);
   };
 
-  filterCoffee = (coffeeCards, tab) => {
+  const filterCoffee = (coffeeCards, tab) => {
     switch (tab) {
       case "Columbia":
         return coffeeCards.filter((coffee) => coffee.country === "Columbia");
@@ -57,25 +54,24 @@ export default class OurCoffee extends Component {
     }
   };
 
-	onFilterSelect = (tab) => {
-		this.setState ({tab})
-	}
+  const onFilterSelect = (tab) => {
+    setTab(tab);
+  };
 
-
-  render() {
-    const { coffeeCards, term } = this.state;
-    const visibleData = this.filterCoffee(this.searchCoffee(coffeeCards, term), this.state.tab);
-    return (
-      <div className="ourCoffee">
-        <Header title={"Our Coffee"} img={headerImg}/>
-        <InfoSection {...info} />
-        <hr />
-        <CoffeeFilter
-          onUpdateCoffee={this.onUpdateCoffee}
-          onFilterSelect={this.onFilterSelect}
-        />
-        <CardList coffeeCards={visibleData} />
-      </div>
-    );
-  }
+  const visibleData = filterCoffee(
+    searchCoffee(coffeeCards, term),
+    tab
+  );
+  return (
+    <div className="ourCoffee">
+      <Header title={"Our Coffee"} img={headerImg} />
+      <InfoSection {...info} />
+      <hr />
+      <CoffeeFilter
+        onUpdateCoffee={onUpdateCoffee}
+        onFilterSelect={onFilterSelect}
+      />
+      <CardList coffeeCards={visibleData} />
+    </div>
+  );
 }

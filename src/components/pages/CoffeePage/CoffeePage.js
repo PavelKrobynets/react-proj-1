@@ -1,27 +1,29 @@
 import Header from "../../header/HeaderSection";
 import InfoSection from "../../infoSection/InfoSection";
-import headerImg from "../../../img/headerImg.jpg"
-import "./CoffeePage.scss"
+import headerImg from "../../../img/headerImg.jpg";
+import useCardList from "../../../helpers/coffeeList";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import "./CoffeePage.scss";
 
-const info = {
-	title: "About it",
-	country: "Brasil",
-	descr: "lirem ipsum",
-	img: "/img/aromico.jpg",
-	price: 16.53
-}
+export default function CoffeePage() {
+  const [coffeeCard, setCoffeeCard] = useState(null);
 
-export default function CoffeePage() { 
-	return (
-		<div className="coffeePage">
-			<Header title={"Our Coffee"} img={headerImg}/>
-			{/* <div className="coffeePage__wrapper">
-				<img src="" alt="" className="coffeePage__img"/>
-				<div className="coffeePage__content">
+  const { getSingleCard } = useCardList();
+  const { coffeeId } = useParams();
 
-				</div>
-			</div> */}
-			<InfoSection {...info}/>
-		</div>
-	);
+useEffect(() => {
+	updateCoffee();
+}, [])
+
+
+	const updateCoffee = () => {
+				setCoffeeCard(getSingleCard(+coffeeId))
+	}
+  return (
+    <div className="coffeePage">
+      <Header title={"Our Coffee"} img={headerImg} />
+      <InfoSection {...coffeeCard} />
+    </div>
+  );
 }

@@ -18,7 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/OurCoffee" element={<OurCoffee />} />
-          <Route path="/CoffeePage" element={<CoffeePage />} />
+          <Route path="/CoffeePage/:coffeeId" element={<CoffeePage />} />
           <Route path="/Goods" element={<Goods />} />
         </Routes>
         <Footer />

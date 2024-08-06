@@ -6,7 +6,7 @@ export default function CardList({ coffeeCards }) {
     const { id, ...props } = item;
     return (
       <div className="cardList__wrapper" key={id}>
-        <Card {...props} />
+        <Card id={id} {...props} />
       </div>
     );
   });

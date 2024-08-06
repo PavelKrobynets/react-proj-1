@@ -5,7 +5,7 @@ import InfoSection from "../../infoSection/InfoSection.js";
 import headerImg from "../../../img/Goods.png";
 import cupImg from "../../../img/Cup.png";
 import CardList from "../../cardList/CardList.js";
-import { coffeeCards } from "../../../helpers/coffeeList.js";
+import useCardList from "../../../helpers/coffeeList.js";
 
 const info = {
   img: cupImg,
@@ -22,8 +22,10 @@ is song that held help face.`,
 export default function Goods() {
   const [cardList, setCardList] = useState([]);
 
+	const {getAllCards} = useCardList();
+
   useEffect(() => {
-    setCardList(coffeeCards);
+    setCardList(getAllCards);
   }, []);
 
   return (
